@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# PyCharm specific
+.idea/
+*.iml
+
+# Jupyter Notebooks Checkpoints
+.ipynb_checkpoints
+
+# macOS & Linux junk
+.DS_Store
+Thumbs.db
