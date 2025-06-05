@@ -2,6 +2,7 @@ import random
 import art
 
 game_start = input("Do you want to play a game of Blackjack? Type 'y' or 'n':")
+
 if game_start == "y":
     print(art.logo)
 
@@ -40,13 +41,9 @@ while game_start == "y":
     dealer_cards = []
 
     for i in range(2):
-        card_generated = random.choice(cards)
-        print(card_generated)
-        users_cards.append(card_generated)
+        users_cards.append(random.choice(cards))
 
-    temp_card_generated = random.choice(cards)
-    print(temp_card_generated)
-    dealer_cards.append(temp_card_generated)
+    dealer_cards.append(random.choice(cards))
 
     user_score = sum(users_cards)
     dealer_score = sum(dealer_cards)
@@ -68,7 +65,6 @@ while game_start == "y":
 
     while continue_game == "y" and user_score <= 21:
         card_generated = random.choice(cards)
-        print(card_generated)
         if card_generated == 11:
             if user_score < 11:
                 users_cards.append(card_generated)
@@ -91,7 +87,6 @@ while game_start == "y":
     if continue_game == "n":
         while dealer_score <= 16:
             card_generated = random.choice(cards)
-            print(card_generated)
             if card_generated == 11:
                 if dealer_score < 11:
                     dealer_cards.append(card_generated)
