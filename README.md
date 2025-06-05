@@ -19,14 +19,14 @@ The **100 Days of Code** challenge is a commitment to code for at least an hour 
 The repository is organized by days:
 Day1/
 Day2/
-....
+…
 Day100/
 
 ## 🧠 Lessons Learned So Far
 
 - Git & GitHub workflows
 - Importance of project structure and version control
-- Python syntax, f-strings, string manipulation
+- Python syntax, f-strings, string methods
 - How to stay consistent and avoid burnout
 
 ---
